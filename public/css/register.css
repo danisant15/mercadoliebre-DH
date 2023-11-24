@@ -1,0 +1,177 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Header */
+
+header {
+    background-color: #eac922;
+    width: 100%;
+    height: 50%;
+
+}
+
+.containerFlex {
+    display: flex;
+
+}
+
+.logo {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    padding: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+
+
+}
+
+.barra {
+    width: 300px;
+
+}
+
+.barra-buscador {
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 20px;
+
+
+}
+
+.boton-lupa {
+    border: none;
+    cursor: pointer;
+    background-color: #ebebeb;
+
+}
+
+.fa-magnifying-glass {
+    color: black;
+}
+
+.icono-mensaje {
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+
+}
+
+.nav-bar1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 5px;
+
+}
+
+.nav-bar1 a {
+    margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+
+}
+
+.nav-bar2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style: none;
+
+
+}
+
+.nav-bar2 a {
+    margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+
+.burger-menu {
+    display: none;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    width: 50px;
+
+}
+
+.fa-bars {
+    background-color: rgb(50, 50, 187);
+    width: 50px;
+    height: 30px;
+}
+
+/* MAIN */
+
+.formulario-register{
+    border: solid 1px rgb(33, 33, 89);
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #eac922;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+    text-align: center;
+    margin-top: 60px;
+    justify-content: center;
+    
+}
+
+.fa-credit-card{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-gift{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+.titulos-footer{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+.parrafos-footer{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 12px;
+}
