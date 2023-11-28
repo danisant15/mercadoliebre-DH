@@ -4,6 +4,10 @@
     box-sizing: border-box;
 } */
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Header */
 
 header {
@@ -13,7 +17,7 @@ header {
 
 }
 
-.containerFlex {
+.container-header {
     display: flex;
 
 }
@@ -35,7 +39,7 @@ header {
 
 }
 
-.barra-buscador {
+.search-bar {
     justify-content: center;
     margin-top: 40px;
     margin-left: 70px;
@@ -43,7 +47,7 @@ header {
 
 }
 
-.boton-lupa {
+.button-lupa {
     border: none;
     cursor: pointer;
     background-color: #ebebeb;
@@ -54,7 +58,7 @@ header {
 
 .fa-magnifying-glass {
     color: black;
-    height: 40px;
+    height: 30px;
 }
 
 .icono-mensaje {
@@ -135,158 +139,179 @@ header {
 /* MAIN */
 
 main{
-    width: 90%;
+    width: 100%;
+    background-color: #ebebeb;
+    
+    
+}         
+
+.lista-articulos{
+    list-style: none;
+    display: flex;
+  
     
 }
-
-section{
-    display: flex;  
-    flex-wrap: wrap;
-    justify-content: space-evenly;    
-}                                                    
-
 
 .caja-articulos{
     background-color: #ffff;
     border: solid 1px #ebebeb;
+    box-sizing: border-box;
     text-align: center;
-    margin-left: 30px;
-    padding: 15px;
+    margin-right: 20px;
+    margin-bottom: 15px;
     transition-duration: 0.5s;
+    width: 90%;
 
    
-
 }
  
 .caja-articulos:hover{
-    box-shadow: 2px 2px 2px 2px #afabab
+    box-shadow: 2px 2px 2px 2px #afabab;
+   
     
+}
+
+.container-caja{
+    border-top: #ebebeb 1px solid;
+    box-sizing: border-box;
+    margin: auto;
+    transition-duration: 0.5s;
+   
+}
+
+.container-caja:hover{
+    box-shadow: 2px 2px 2px 2px #afabab
+
 }
 
 .imagen-articulo{
     width: 15rem;
     height: 15rem;
     margin: 10px;
+
 }
 
 .titulares{
     font-size: 24px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
     margin-left: 20px;
     color: #353d4b;
 
+
 }
 
-.precios{
+.precio{
     font-size: 18px;
     color: #353d4b;
+    text-align: left;
+    margin-left: 20px;
+
+   
 }
 
-.descuentos{
+.descuento{
     font-size: 16px;
     color: #39b54a;
     font-weight: bold;
     padding-bottom: 0.6rem;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    
 }
 
-.descripciones{
+.descripcion{
     font-size: 16px;
     font-weight: bold;
+    color: white;
     text-align: center;
-    color: #ebebeb;
     transition-duration: 0.5s;
-    
-
+    padding-bottom: 5px;
 }
 
-.descripciones:hover{
+.descripcion:hover{
     color: #353d4b;
 }
 
-.imagen{
-    width: 15rem;
-    height: 15rem;
-    margin: 10px;
-}
-
-
-
 .icono-camion{
     border: solid 1px #39b54a;
-    border-radius: 50px;
-    width: 50px;
+    color: #39b54a;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    line-height: 35px;
+    margin-top: 5px;
     position: relative;
-    top: 90%;
-    right: 10px;
+    right: 20px;
+    top: -30px;
+    margin-left: 50px;
+    
        
 }
 
 .fa-truck{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: #39b54a;
-   
-  
+    text-align: center;
+    margin-left: 5px;
 }
 
-/* FOOTER */
 
-.container-footer{
+.container-avisos{
+    background-color: #ebebeb;
     text-align: center;
-    margin: 1.2rem;
     display: flex;
     justify-content: center;
-    margin-left: 50px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+
+.iconos-titulares-parrafos{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
     
 }
 
-.info-footer{
-    text-align: center;
-    color: #353d4b;
-    padding: 1rem;
 
-}
-
-.icono-footer{
+.icono-aviso{
     font-size: 32px;
     color: #2b5191;
-    margin-bottom: 0.6rem;
-    padding-top: 50px;
+    margin-bottom: 10px;
     transition-duration: 0.5s;
-    transition-property: color;
+    
 
 }
 
-.icono-footer:hover{
+.icono-aviso:hover{
     color: #8c98c7;
 
 }
 
 
-
-.titulos-footer{
+.titulo-aviso{
     font-size: 18px;
     font-weight: bold;
     color: #353d4b;
-    margin-top: 5px;
-
 }
 
-
-.parrafos-footer{
+.parrafo-aviso{
     font-size: 16px;
-    margin-bottom: 20px;
     text-align: center;
     color: #353d4b;
-    margin-top: 10px;
+    margin-left: 20px;
+    
 }
+
+/* Footer */
 
 .copyright{
-    text-align: center;
-    color: #353d4b;
-    margin-top: 30px;
-    justify-content: center;
+   color: #353d4b;
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 5px;
+    
 
 }
 
@@ -296,58 +321,201 @@ section{
 
 /* Smartphones */
 
-@media (min-width: 460) {
-    .banner{
-        width: 100%;
-    }
-
-    .navbar{
-        display: none;
-    }
+@media (min-width: 478) {
+        .logo{
+            width: 100%;
+        }
     
-    .fa-bars{
-     
-    }
+        .search-bar{
+            width: 40%;
+        }
 
-    .logo-buscador{
-        flex-direction: column;
-    }
+        .navbar {
+            display: flex ;
+            justify-content: space-between;
+            padding: 0px;
+            width: 100%;
+        }
 
-}  
+        .navbar ul{
+            list-style: none;
+            display: flex;
+        }
 
-
+        .navbar a {
+            text-decoration: none;
+            display: flex;
+    
+        }
         
+        .navbar li{
+            margin-right: 5px;
+            display: flex;
+        }
 
+        .burger-menu{
+            display: none;
+        }
+        
+        .titulares{
+            font-size: 20px;
+        }
 
+        .caja-articulos{
+            max-width: 40%;
+            transition: all 0.5s;
+        }
 
+        .caja-articulos:hover{
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+        }
+        
+        .descripcion{
+            display: block;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
 
-
+        .caja-articulos:hover .container-caja .descripcion {
+            opacity: 1;
+        }
+        
+        .lista-articulos{
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+        
+        .imagen-articulo{
+            max-width: 90%;
+        }
+    
+    
 /* Tablets */
 
-@media (min-width: 361px) {
-
-    body{
-        background-color: aqua;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+@media (min-width: 768px) {
+    .navbar a{
+        font-size: 16px;
+        margin: 0 5px 5px;
     }
+    .icono-mensaje{
+        font-size: 18px;
+    }
+
+    .control-input{
+        max-width: 600px;
+    }
+
+    .control-login{
+        max-width: 600px;;
+    }
+    
+    .titulares{
+        font-size: 25px;
+    }
+    
+    .lista-articulos{
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+        
+    .caja-articulos{
+        max-width: 24%;
+    }
+
+    .imagen-articulo{
+        max-width: 90%;
+    }
+
+    .icono-camion{
+            position: relative;
+        }
+        
 }
 
 /* Laptops */
 
 @media (min-width: 992) {
-    body {
-        background-color: rgb(62, 62, 170);
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    header {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .navbar{
+        font-size: 22px;
+    }
+
+    .container-header {
+        width: 70%;
+    }
+
+    .icono-mensaje .titulares{
+        width: 30%;
+    }
+
+    .titulares{
+        font-size: 32px;
+        max-width: 300px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .parrafos-footer{
+        font-size: 14px;
+        
+    }
+
+    .control-login{
+        font-size: 16px;
+    }
+    
 
 }
 
 /* Desktop */
 
-@media (min-width: 769) {
-    body {
-        background-color: rgb(196, 109, 196);
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+@media (min-width: 1200px) {
+    .navbar a {
+        font-size: 18px;
     }
 
+    .icono-mensaje{
+        font-size: 20px;
+    }
+    
+    .parrafos-footer{
+        font-size: 16px;
+    }
+
+    .search-bar{
+        max-width: 550px;
+        font-size: 25px;
+    }
+
+    .titulos-footer{
+        font-size: 18px;
+    }
+    
+    .container-footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container-footer section {
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .descripcion{
+        font-size: 18px;
+    }
+
+   .barra {
+        font-size: 20px;
+    }
 }
+}   
+

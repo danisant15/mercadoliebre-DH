@@ -11,14 +11,23 @@
         <script src="https://kit.fontawesome.com/2262013d83.js" crossorigin="anonymous"></script>
         <!-- Link Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Link Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
         
         <title>Bienvenidos a Mercado Liebre</title>
 </head>
 <body>
+
+    <!-------- HEADER -------->
+
     <header>
-        <div class="containerFlex">
+        <div class="container-header">
+
+            <!---------- Logo --------->
+
             <div class="logo">
                 <img src="/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+            
             </div>
             
         <!-------- Barra de búsqueda -------->
@@ -26,9 +35,9 @@
             <div>
                 <form action="">
                     <label for="">
-                        <div class="barra-buscador">
+                        <div class="search-bar">
                             <input type="text" name="barra-buscador" class="barra" placeholder="Buscar...">
-                            <button class="boton-lupa" type="submit"><i class="fa-thin fa-magnifying-glass"></i></button>
+                            <button class="button-lupa" type="submit"><i class="fa-thin fa-magnifying-glass"></i></button>
                         </div>
                     </label>
                 </form>
@@ -69,27 +78,42 @@
         <img src="/img/img-home-banner.jpg" alt="Banner de ofertas" class="banner">
     </section>
 
+
 <!-------- MAIN -------->
 
     <main>
         <div class="formulario-login">
             <form action="/src/views/login.html" method="POST">
-                <div class="usuario">
-                    <label for="nombre">Nombre de usuario:  </label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div class="contraseña">
-                    <label for="clave">Contraseña:  </label>
-                    <input type="password" name="clave" id="clave">
+                <p>
+                    <label for="nombre">NOMBRE DE USUARIO:  
+                    </label>
+                       <input type="text" name="nombre" id="nombre">
+                </p>
+                
+                <p>
+                    <label for="clave">CONTRASEÑA:  
+                    </label>
+                       <input type="password" name="clave" id="clave">
+                </p>
 
-                <div class="boton-enviar">
-                    <button type="submit">Enviar</button>
-                </div>
+               
+                <button type="submit" class="boton-enviar"><p>ENVIAR</p></button>
+                
             </form>
         </div>
          
     </main>
 
-   <!-------- FOOTER -------->
-    
+    <!-------- FOOTER -------->
+
+    <footer class="copyright">
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+
+
+</body>
+
+
+</html>
+
   
