@@ -155,7 +155,7 @@ header {
 }
   
 input{
-    background-color: white; 
+    background-color: #ebebeb; 
     width: 408px; 
     height: 40px; 
     border-radius: 5px;  
@@ -169,7 +169,7 @@ input{
 }
 
 input:hover{
-    background-color: #ebebeb;
+    background-color: white;
 }
 
 label{

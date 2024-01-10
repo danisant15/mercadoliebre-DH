@@ -155,7 +155,7 @@ header {
 }
   
 input{
-    background-color: white; 
+    background-color: #ebebeb; 
     width: 408px; 
     height: 40px; 
     border-radius: 5px;  
@@ -166,8 +166,9 @@ input{
     padding-left: 10px;
     margin-bottom: 20px; 
 }
+
 input:hover{
-    background-color: #ebebeb;
+    background-color: white;
 }
 
 .input-perfil{
@@ -225,11 +226,6 @@ button:hover{
 button p{
     color: #ebebeb; 
 }
-
-
-
-
-
 
 /* FOOTER */
 

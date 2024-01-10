@@ -43,6 +43,7 @@ header {
     justify-content: center;
     margin-top: 40px;
     margin-left: 70px;
+    display: flex;
 
 
 }
@@ -99,6 +100,11 @@ header {
 
 }
 
+.nav-bar1 a:hover{
+    color: #2b5191;
+
+}
+
 .nav-bar2 {
     display: flex;
     align-items: flex-end;
@@ -116,14 +122,14 @@ header {
     color: #353d4b;
 }
 
+.nav-bar2 a:hover{
+    color: #2b5191;
+
+}
 
 .burger-menu {
     display: none;
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px;
-    width: 50px;
-
+    
 }
 
 .fa-bars {
@@ -141,7 +147,6 @@ header {
 main{
     width: 100%;
     background-color: #ebebeb;
-    
     
 }         
 
@@ -193,7 +198,7 @@ main{
 
 .titulares{
     font-size: 24px;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 30px;
     margin-left: 20px;
     color: #353d4b;
@@ -248,12 +253,20 @@ main{
     top: -30px;
     margin-left: 50px;
     
+    
        
+}
+
+.fa-truck:hover{
+    transform: rotate(-90deg);
+
 }
 
 .fa-truck{
     text-align: center;
     margin-left: 5px;
+    transition: all 0.5s;
+
 }
 
 
@@ -271,24 +284,27 @@ main{
     margin-bottom: 15px;
     margin-top: 15px;
     
-    
 }
 
-
-.icono-aviso{
+.fa-credit-card, .fa-gift, .fa-user-shield{
     font-size: 32px;
     color: #2b5191;
     margin-bottom: 10px;
-    transition-duration: 0.5s;
-    
+    transition: 0.5s;
+}
+
+.fa-credit-card:hover{
+    color: #6285c2;
 
 }
 
-.icono-aviso:hover{
-    color: #8c98c7;
-
+.fa-gift:hover{
+    color: #6285c2;
 }
 
+.fa-user-shield:hover{
+    color: #6285c2;
+}
 
 .titulo-aviso{
     font-size: 18px;
@@ -312,210 +328,79 @@ main{
    margin-top: 15px;
    margin-bottom: 5px;
     
-
 }
 
 
 
 /* Media Queries */ 
 
-/* Smartphones */
-
-@media (min-width: 478) {
-        .logo{
-            width: 100%;
-        }
-    
-        .search-bar{
-            width: 40%;
-        }
-
-        .navbar {
-            display: flex ;
-            justify-content: space-between;
-            padding: 0px;
-            width: 100%;
-        }
-
-        .navbar ul{
-            list-style: none;
-            display: flex;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            display: flex;
-    
-        }
-        
-        .navbar li{
-            margin-right: 5px;
-            display: flex;
-        }
-
-        .burger-menu{
-            display: none;
-        }
-        
-        .titulares{
-            font-size: 20px;
-        }
-
-        .caja-articulos{
-            max-width: 40%;
-            transition: all 0.5s;
-        }
-
-        .caja-articulos:hover{
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    
-        }
-        
-        .descripcion{
-            display: block;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .caja-articulos:hover .container-caja .descripcion {
-            opacity: 1;
-        }
-        
-        .lista-articulos{
-            display: flex;
-            align-items: stretch;
-            flex-wrap: wrap;
-        }
-        
-        .imagen-articulo{
-            max-width: 90%;
-        }
-    
-    
-/* Tablets */
-
-@media (min-width: 768px) {
-    .navbar a{
-        font-size: 16px;
-        margin: 0 5px 5px;
-    }
-    .icono-mensaje{
-        font-size: 18px;
+@media (min-width: 478px) and (max-width: 768px){
+    .container-header{
+        width: 100%;
     }
 
-    .control-input{
-        max-width: 600px;
+   .logo {
+        width: 50%; 
+        justify-content: center;
     }
 
-    .control-login{
-        max-width: 600px;;
+    .search-bar {
+        width: 200px;
+        margin-top: 20px; 
     }
-    
-    .titulares{
-        font-size: 25px;
+
+    .nav-bar1,
+    .nav-bar2 {
+        display: none;
     }
-    
+
+    .burger-menu {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 10px;
+        width: 50px;
+
+    }
+
+    .banner {
+        width: 100%;
+
+    }
+
     .lista-articulos{
         display: flex;
-        align-items: stretch;
-        flex-wrap: wrap;
-    }
+        flex-direction: column;
         
-    .caja-articulos{
-        max-width: 24%;
+      
     }
 
-    .imagen-articulo{
-        max-width: 90%;
-    }
-
-    .icono-camion{
-            position: relative;
-        }
-        
-}
-
-/* Laptops */
-
-@media (min-width: 992) {
-    header {
+    .container-avisos{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .container-header{
+        width: 100%;
     }
 
-    .navbar{
-        font-size: 22px;
+    .banner {
+        width: 100%;
+
     }
 
-    .container-header {
-        width: 70%;
-    }
-
-    .icono-mensaje .titulares{
-        width: 30%;
-    }
-
-    .titulares{
-        font-size: 32px;
-        max-width: 300px;
-        text-align: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .parrafos-footer{
-        font-size: 14px;
+    .lista-articulos{
+        display: flex;
+        column-count: 2;
         
     }
 
-    .control-login{
-        font-size: 16px;
-    }
-    
-
 }
 
-/* Desktop */
-
-@media (min-width: 1200px) {
-    .navbar a {
-        font-size: 18px;
-    }
-
-    .icono-mensaje{
-        font-size: 20px;
-    }
-    
-    .parrafos-footer{
-        font-size: 16px;
-    }
-
-    .search-bar{
-        max-width: 550px;
-        font-size: 25px;
-    }
-
-    .titulos-footer{
-        font-size: 18px;
-    }
-    
-    .container-footer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .container-footer section {
-        max-width: 30%;
-        margin-bottom: 20px;
-    }
-
-    .descripcion{
-        font-size: 18px;
-    }
-
-   .barra {
-        font-size: 20px;
-    }
+@media (min-width: 768px) and (max-width: 992px){
 }
-}   
 
+@media (min-width: 1200px){
+}
